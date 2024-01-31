@@ -1,10 +1,10 @@
 
-レイヤードアーキテクチャ ( + DDD )の勉強のためにAPIを実装した。   
+レイヤードアーキテクチャ ( + DDD )の勉強のために基本的なAPIを実装した。   
 APIの仕様は、
 * POST  todo/create   
    リクエストで指定されたタイトルをデータベースに保存する
-* GET   todo/get　　　
-   クエリがある場合は文字列に部分一致しているtitleを持つtodoのみ取得する
+* GET   todo/get   
+   クエリがある場合は文字列に部分一致しているtitleを持つtodoのみ取得する  
    クエリがない場合は作成したTODOの一覧を取得する
 * POST  todo/update/:todo_id   
    指定した TODO を更新する
@@ -37,14 +37,12 @@ APIの仕様は、
   依存関係の整理、テストの実装を行いたい、勉強のためなどの動機から、何かしらのアーキテクチャは採用したい  
   → 今回は単純な機能の実装のためシンプルそうなレイヤードアーキテクチャにしてみる（ DDDについてまだよく分かってないため理解は後回し )
   
-### 構成
-
 ### 参考
 * Ginの参考：    
   https://qiita.com/Syoitu/items/8e7e3215fb7ac9dabc3a    
   https://qiita.com/hyo_07/items/59c093dda143325b1859    
 * アーキテクチャ :    
-   https://tech.yyh-gl.dev/blog/go_web_api/
+   https://tech.yyh-gl.dev/blog/go_web_api/   
    https://qiita.com/tono-maron/items/345c433b86f74d314c8d
 * go mod init  :  https://qiita.com/TakanoriVega/items/6d7210147c289b45298a  
 * ステータスコード : https://developer.mozilla.org/ja/docs/Web/HTTP/Status  
