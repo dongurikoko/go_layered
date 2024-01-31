@@ -1,0 +1,26 @@
+<!--- 表示する例 -->
+<html>
+    <body>
+    <h2>追加</h2>
+    <form method="post" action="/todo/create">
+        <!--- nameはサーバー側でPostForm("title")のように受け取る-->
+        <p>title<input type="text" name="title" size="30" placeholder="入力してください" ></p>
+        <p><input type="submit" value="Send"></p>
+    </form>
+    
+    <h2>一覧</h2>
+    {{ if .Todos }}
+    <ul>
+        {{ range .Todos }}
+            <li>
+                ID : {{ .ID }} <br>
+                Title : {{ .Title }} <br>
+                更新日：{{ .Updated_at }}<br>
+            </li>
+        {{end}}
+    </ul>
+    {{ else }}
+    <p>No todos found.</p>
+    {{ end }}
+</body>
+</html>
