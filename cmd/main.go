@@ -22,10 +22,10 @@ func main() {
 	// htmlのディレクトリを指定
 	engine.LoadHTMLGlob("public/*.html")
 
-	engine.POST("/todo", todoHandler.HandleTodoCreate)
-	engine.GET("/todo", todoHandler.HandleTodoGet)
-	engine.POST("/todo/:id", todoHandler.HandleTodoUpdate)
-	engine.DELETE("/todo/:id", todoHandler.HandleTodoDelete)
+	engine.POST("/todos", todoHandler.HandleTodoCreate)
+	engine.GET("/todos", todoHandler.HandleTodoGet)
+	engine.POST("/todos/:id", todoHandler.HandleTodoUpdate)
+	engine.DELETE("/todos/:id", todoHandler.HandleTodoDelete)
 
 	/* ===== サーバの起動 ===== */
 	log.Println("Server running...")
