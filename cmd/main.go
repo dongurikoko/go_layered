@@ -24,7 +24,7 @@ func main() {
 
 	engine.POST("/todos", todoHandler.HandleTodoCreate)
 	engine.GET("/todos", todoHandler.HandleTodoGet)
-	engine.POST("/todos/:id", todoHandler.HandleTodoUpdate)
+	engine.PUT("/todos/:id", todoHandler.HandleTodoUpdate)
 	engine.DELETE("/todos/:id", todoHandler.HandleTodoDelete)
 
 	/* ===== サーバの起動 ===== */
