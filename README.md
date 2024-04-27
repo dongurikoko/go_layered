@@ -1,6 +1,6 @@
 
 レイヤードアーキテクチャ ( + DDD )の勉強のために基本的なAPIを実装した。  
-https://tech.yyh-gl.dev/blog/go_web_api/あたりを特に参考にしています。
+https://tech.yyh-gl.dev/blog/go_web_api/  あたりを特に参考にしています。  
 APIの仕様は、
 * POST  todo/create   
    リクエストで指定されたタイトルをデータベースに保存する
